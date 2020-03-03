@@ -9,51 +9,51 @@ public class Position {
 */
 private int x;
 /**
-* y position. 
+* y position.
 */
 private int y;
 /**
  * public constructor with an initial x,y.
- * @param initial_x initial x position.
- * @param initial_y initial y position.
+ * @param initialX initial x position.
+ * @param initialY initial y position.
  */
-public Position(final int initial_x, final int initial_y) {
-  this.x = initial_x;
-  this.y = initial_y;
+public Position(final int initialX, final int initialY) {
+  this.x = initialX;
+  this.y = initialY;
 }
 
 /**
- * public constructor which initialize position to 0,0
+ * public constructor which initialize position to 0,0.
  */
 public Position() {
-	this.x = 0;
-	this.y = 0;
+      this.x = 0;
+      this.y = 0;
 }
 /**
- * 
+ *
  * @param numberOfCases advances with n cases (x position).
  */
 public void moveX(final int numberOfCases) {
       this.x += numberOfCases;
 }
 /**
- * 
+ *
  * @param numberOfCases advances with n cases (y position).
  */
 public void moveY(final int numberOfCases) {
       this.y += numberOfCases;
 }
 /**
- * return x position.
+ * @return x position.
  */
 public int getX() {
-	return this.x;
+      return this.x;
 }
 /**
- * return y position.
+ * @return y position.
  */
 public int getY() {
-	return this.y;
+      return this.y;
 }
 
 }

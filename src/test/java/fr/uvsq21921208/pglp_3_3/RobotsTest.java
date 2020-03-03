@@ -22,13 +22,13 @@ public class RobotsTest {
          myRobots.avanceTout();
          int expectedX  = 0;
          int expectedY  = -1;
-         assertEquals(r1.position.getX(), expectedX);
-         assertEquals(r1.position.getY(), expectedY);
+         assertEquals(r1.getPosition().getX(), expectedX);
+         assertEquals(r1.getPosition().getY(), expectedY);
          
          expectedX = 5;
          expectedY = 2;
-         assertEquals(r2.position.getX(), expectedX);
-         assertEquals(r2.position.getY(), expectedY);
+         assertEquals(r2.getPosition().getX(), expectedX);
+         assertEquals(r2.getPosition().getY(), expectedY);
 
 }
 }
