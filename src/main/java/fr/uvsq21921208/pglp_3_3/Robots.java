@@ -8,6 +8,7 @@ public class Robots {
      */
     private ArrayList<Robot> listOfRobots;
 	public Robots() {
+		listOfRobots = new ArrayList<Robot>();
 	}
 	/**
 	 * 
