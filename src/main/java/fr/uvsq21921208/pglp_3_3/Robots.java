@@ -6,19 +6,19 @@ public class Robots {
     /**
      * List of robots.
      */
-    private ArrayList<Robot> listOfRobots;
+    private ArrayList<RobotStatique> listOfRobots;
 	public Robots() {
-		listOfRobots = new ArrayList<Robot>();
+		listOfRobots = new ArrayList<RobotStatique>();
 	}
 	/**
 	 * 
-	 * @param robot robot to be added to robots list.
+	 * @param r2 robot to be added to robots list.
 	 */
-	public void addARobot(Robot robot) {
+	public void addARobot(RobotStatique robot) {
 		this.listOfRobots.add(robot);
 	}
-    public void avanceTout() {
-    	for (Robot robot: listOfRobots) {
+    public void avanceTout() throws UnsupportedOperationException {
+    	for (RobotStatique robot: listOfRobots) {
     		robot.avance();
     	}
     }

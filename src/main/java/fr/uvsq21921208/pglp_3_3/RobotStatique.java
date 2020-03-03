@@ -1,19 +1,31 @@
 package fr.uvsq21921208.pglp_3_3;
-
-public class RobotStatique extends Robot {
+/**
+ * 
+ * A static robot.
+ *
+ */
+public class RobotStatique{
+	/**
+	 * Robot position.
+	 */
+	protected Position position;
+	/**
+	 * Robot Direction
+	 */
+	protected Direction direction;
     /**
      * 
      * @param pos initial position.
      * @param dict initial direction.
      */
 	public RobotStatique(Position pos, Direction dict) {
-		super(pos, dict);
+           this.position = new Position(pos.getX(), pos.getY());
+           this.direction = dict;
 	}
-	@Override
-    /**
-	*Overriding avance method from super class (static robots do not move)
-    */
+	/**
+	 * avance method.
+	 */
 	public void avance()  {
-		throw new UnsupportedOperationException();
+		
 	}
 }

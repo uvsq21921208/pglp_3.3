@@ -1,5 +1,7 @@
 package fr.uvsq21921208.pglp_3_3;
 
+import static org.junit.Assert.assertEquals;
+
 import org.junit.Test;
 
 public class RobotsTest {
@@ -9,7 +11,7 @@ public class RobotsTest {
 	 * avanceTout test case.
 	 * 
 	 */
-	@Test(expected = UnsupportedOperationException.class)
+	@Test
 	
 	public void avanceToutTest() {
          Robots myRobots = new Robots();
@@ -18,6 +20,15 @@ public class RobotsTest {
          myRobots.addARobot(r1);
          myRobots.addARobot(r2);
          myRobots.avanceTout();
+         int expectedX  = 0;
+         int expectedY  = -1;
+         assertEquals(r1.position.getX(), expectedX);
+         assertEquals(r1.position.getY(), expectedY);
+         
+         expectedX = 5;
+         expectedY = 2;
+         assertEquals(r2.position.getX(), expectedX);
+         assertEquals(r2.position.getY(), expectedY);
 
 }
 }
